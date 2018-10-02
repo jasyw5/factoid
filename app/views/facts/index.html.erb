@@ -1,1 +1,13 @@
 <h1>This is where the Facts will go!</h1>
+
+<h1>Share a fun fact with the world</h1>
+<%= simple_form_for @fact do |f| %>
+  <%= f.input :fact %>
+  <%= f.input :author %>
+  <%= f.submit 'Create' %>
+<% end %>
+
+<div class="factoutput">
+  <h1 id="factrandom"><%= @fact_display.fact %></h1>
+  <h2 id="factauthor"><%= @fact_display.author %></h2>
+</div>

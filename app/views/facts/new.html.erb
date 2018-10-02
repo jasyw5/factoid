@@ -1,0 +1,6 @@
+<h1>Share a fun fact with the world</h1>
+<%= simple_form_for @fact do |f| %>
+  <%= f.input :fact %>
+  <%= f.input :author %>
+  <%= f.submit 'Create' %>
+<% end %>
